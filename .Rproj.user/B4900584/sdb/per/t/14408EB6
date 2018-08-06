@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "# Startup message\n.onAttach <- function(libname, pkgname){\n    packageStartupMessage(\"\\nTo cite codesBR in publications, use: citation('codesBR')\")\n  }\n\n# Internal function to convert data latin1 to ascii\nto_ascii <- function(data){\n\n  dplyr::mutate_all(data, iconv, from = \"latin1\", to = \"ASCII//TRANSLIT\")\n}\n",
+    "created" : 1525644896605.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3983160037",
+    "id" : "14408EB6",
+    "lastKnownWriteTime" : 1525644918,
+    "last_content_update" : 1525644918495,
+    "path" : "~/GitHub/codesBR/R/utils.R",
+    "project_path" : "R/utils.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
